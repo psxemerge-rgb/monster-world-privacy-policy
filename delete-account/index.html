@@ -177,9 +177,9 @@
   <div class="wrap">
     <div class="card">
       <h1>Delete Account - Monster World - The Dawn</h1>
-      <p class="meta"><strong>Effective date:</strong> March 22, 2026</p>
+      <p class="meta"><strong>Effective date:</strong> March 24, 2026</p>
 
-      <p><strong>Monster World - The Dawn</strong> now supports <strong>in-app account deletion</strong>. If you can access the Game, use the in-app <strong>Delete Account</strong> button in <strong>Settings</strong> first. This page is the <strong>fallback path</strong> for players who cannot access the Game or whose in-app deletion attempt could not be completed.</p>
+      <p><strong>Monster World - The Dawn</strong> now supports <strong>in-app account deletion</strong>. This includes guest accounts created through Unity Authentication and accounts linked through Google or Apple. If you can access the Game, use the in-app <strong>Delete Account</strong> button in <strong>Settings</strong> first. This page is the <strong>fallback path</strong> for players who cannot access the Game or whose in-app deletion attempt could not be completed.</p>
 
       <div class="note">
         Developer / Company Name: <strong>Psxemerge</strong>
@@ -187,11 +187,11 @@
       </div>
 
       <div class="accent">
-        <strong>Recommended first step:</strong> Open the Game, go to <strong>Settings &gt; Delete Account</strong>, and confirm the deletion there. That is the primary deletion flow and should immediately delete the current in-game account data we control.
+        <strong>Recommended first step:</strong> Open the Game, go to <strong>Settings &gt; Delete Account</strong>, and confirm the deletion there. That is the primary deletion flow and should immediately delete the current in-game account data we control for guest, Google, or Apple sign-in.
       </div>
 
       <h2>Fallback Deletion Request</h2>
-      <p>If you cannot use the in-app deletion flow, complete this form with the account details that match your in-game account. This page submits directly to our deletion request inbox for manual review.</p>
+      <p>If you cannot use the in-app deletion flow, complete this form with the account details that match your in-game account. For guest accounts, include your Support ID and player name from the in-game profile if available. This page submits directly to our deletion request inbox for manual review.</p>
 
       <form id="delete-account-form" action="https://formsubmit.co/psxemerge@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="Account Deletion Request - Monster World - The Dawn">
@@ -217,7 +217,7 @@
               <option value="">Select one</option>
               <option value="Apple">Apple</option>
               <option value="Google">Google</option>
-              <option value="Guest / Other">Guest / Other</option>
+              <option value="Guest / Anonymous">Guest / Anonymous</option>
             </select>
           </div>
 
@@ -248,12 +248,12 @@
       </form>
 
       <div class="accent">
-        <strong>Important:</strong> Uninstalling the app or clearing app data removes local data from your device, but it does not by itself count as an account deletion request.
+        <strong>Important:</strong> Uninstalling the app or clearing app data removes local data from your device, but it does not by itself count as an account deletion request. If you played as a guest, use the in-app Delete Account flow before uninstalling whenever possible so the guest account and cloud data are deleted correctly.
       </div>
 
       <h2>What Data We Delete</h2>
       <ul>
-        <li>The current Unity Authentication account used by the Game, when deletion is completed in-app</li>
+        <li>The current Unity Authentication account used by the Game, including guest accounts, when deletion is completed in-app</li>
         <li>Current Cloud Save data and Cloud Save files controlled by the Game</li>
         <li>Account-linked game profile information we control</li>
         <li>Player name and related gameplay progress, currencies, monsters, heroes, items, cosmetics, and other account-linked game data we control</li>
@@ -266,6 +266,7 @@
         <li>Security and service integrity</li>
         <li>Legal compliance, dispute resolution, or enforcement of rights</li>
         <li>Data retained by third-party platform providers such as Apple or Google under their own policies, including store purchase history and transaction records they control</li>
+        <li>Information needed to verify a fallback deletion request when the player no longer has in-app access, such as Support ID, sign-in method, or contact email</li>
       </ul>
 
       <h2>Retention Period</h2>
